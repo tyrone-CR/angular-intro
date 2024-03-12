@@ -16,7 +16,7 @@ import { Router, RouterLink } from '@angular/router';
   template: `
     <section>
       <form>
-        <input type="text" placeholder="Filter by city">
+        <input type="text" placeholder="Enter a project name to search">
         <button class="primary" type="button">Search</button>
         <a [routerLink]="['/projects/new']">New</a>
       </form>

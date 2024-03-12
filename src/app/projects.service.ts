@@ -13,13 +13,13 @@ export class ProjectsService {
     return await data.json() ?? [];
   }
 
-  async getProjectById(id: number): Promise<ProjectContent | undefined> {
+  async getProjectById(id: string): Promise<ProjectContent | undefined> {
     const data = await fetch(`${this.url}/${id}`);
     return await data.json() ?? [];
   }
 
   async submitEdit(
-    id: number,
+    id: string,
     update: UpdateProjectContent): Promise<ProjectContent> {
 
     // uses fetch defined as a patch
@@ -48,7 +48,7 @@ export class ProjectsService {
     .then(response => response.json())
   }
 
-  async deleteProject(projectDetailId: number) {
+  async deleteProject(projectDetailId: string) {
       fetch(`${this.url}/${projectDetailId}`, {
       method: 'DELETE',
     })

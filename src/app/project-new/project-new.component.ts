@@ -1,8 +1,8 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, Location } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProjectsService } from '../projects.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ProjectContent } from '../project-content';
 import { TextFieldModule } from '@angular/cdk/text-field';
 
@@ -42,6 +42,7 @@ import { TextFieldModule } from '@angular/cdk/text-field';
         <textarea id="how_content" required type="text" cdkTextareaAutosize cdkAutosizeMinRows="5" formControlName="how_content"></textarea>
 
         <button type="submit" [disabled]="!newForm.valid" [class.disabled]="!newForm.valid" class="primary save">Save</button>
+        <button type="button"  (click)="goBack()" class="primary save">Cancel</button>
     </form>
   </section>
   `,
@@ -65,13 +66,15 @@ export class ProjectNewComponent {
   projectsService = inject(ProjectsService)
   projectDetail: ProjectContent | undefined;
 
+  constructor(private router: Router, private location: Location) {}
+
   createProject() {
     console.log(this.newForm.value)
 
-    let randId = (Math.floor(Math.random() * 100))
+    let ranId = (Math.floor(Math.random() * 100)).toString()
 
     const newContent: ProjectContent = {
-      id: randId ?? '',
+      id: ranId ?? '',
       title: this.newForm.value.title ?? '',
       tagline: this.newForm.value.tagline ?? '',
       title_image: this.newForm.value.title_image ?? '',
@@ -87,6 +90,11 @@ export class ProjectNewComponent {
       newContent
     ).then(projectDetail => {
       this.projectDetail = projectDetail
+      this.router.navigate([`/projects/${projectDetail.id}`])
     })
+  }
+
+  goBack() {
+    this.location.back()
   }
 }

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, Location } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProjectsService } from '../projects.service';
@@ -12,7 +12,7 @@ import { TextFieldModule } from '@angular/cdk/text-field';
   imports: [CommonModule, FormsModule, ReactiveFormsModule, TextFieldModule],
   template: `
   <section class="listing-apply">
-    <h2 class="section-heading">Edit</h2>
+    <h2 class="section-heading">Edit project details:</h2>
       <form [formGroup]="editForm" (ngSubmit)="submitEdit()" novalidate>
         <label for="title">Title: </label>
         <textarea id="title" required type="text" cdkTextareaAutosize cdkAutosizeMinRows="5" formControlName="title"></textarea>
@@ -41,7 +41,10 @@ import { TextFieldModule } from '@angular/cdk/text-field';
         <label for="how_content">How we did it: </label>
         <textarea id="how_content" required type="text" cdkTextareaAutosize cdkAutosizeMinRows="5" formControlName="how_content"></textarea>
 
-        <button type="submit" [disabled]="!editForm.valid" class="primary save">Save</button>
+        <div>
+          <button type="submit" [disabled]="!editForm.valid" class="primary save">Save</button>
+          <button type="button"  (click)="goBack()" class="primary save">Cancel</button>
+        </div>
     </form>
   </section>
   `,
@@ -67,9 +70,9 @@ export class ProjectEditComponent {
   projectsService = inject(ProjectsService)
   projectDetail: ProjectContent | undefined;
 
-  constructor(private router: Router) {
+  constructor(private router: Router,private location: Location) {
     // gets id from the URL
-    const projectDetailId = parseInt(this.route.snapshot.params['id']);
+    const projectDetailId = parseInt(this.route.snapshot.params['id']).toString();
 
     // takes getProjectById and feeds the id. Then sets project detail object
     this.projectsService.getProjectById(projectDetailId).then(projectDetail => {
@@ -123,5 +126,9 @@ export class ProjectEditComponent {
       showcase_alt: this.projectDetail.showcase_alt,
       how_content: this.projectDetail.how_content
     })
+  }
+
+  goBack() {
+    this.location.back()
   }
 }

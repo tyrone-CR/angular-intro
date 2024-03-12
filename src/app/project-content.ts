@@ -1,5 +1,5 @@
 export interface ProjectContent {
-    id: number;
+    id: string;
     title: string;
     tagline: string;
     title_image: string;

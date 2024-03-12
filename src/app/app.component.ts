@@ -11,7 +11,7 @@ import { RouterModule } from "@angular/router";
   ],
   template: `
     <main>
-      <a [routerLink]="['/']">
+      <a [routerLink]="['/projects']">
         <header class="brand-name">
           <img class="brand-logo" src="/assets/projects_logo.jpg" height="50px" alt="logo" aria-hidden="true">
         </header>

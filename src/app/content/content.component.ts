@@ -48,7 +48,7 @@ export class ContentComponent {
   url = 'http://localhost:4200/projects';
 
   constructor(private router: Router) {
-    const projectDetailId = parseInt(this.route.snapshot.params['id']);
+    const projectDetailId = parseInt(this.route.snapshot.params['id']).toString();
   
     this.projectsService.getProjectById(projectDetailId).then(projectDetail => {
       this.projectDetail = projectDetail;
@@ -56,7 +56,7 @@ export class ContentComponent {
   }
 
   deleteProject() {
-    const projectDetailId = parseInt(this.route.snapshot.params['id']);
+    const projectDetailId = parseInt(this.route.snapshot.params['id']).toString();
     this.projectsService.deleteProject(projectDetailId).then(() => {
       this.router.navigate(["/projects"])
     })

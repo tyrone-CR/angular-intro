@@ -127,16 +127,16 @@
       "how_content": "Turns out currating is fun and we're good at it"
     },
     {
-      "id": 30,
-      "title": "TEST",
-      "tagline": "TEST",
-      "title_image": "TEST",
-      "title_alt": "TEST",
-      "what_content": "TEST",
-      "statistics": "TEST",
-      "showcase_image": "TEST",
-      "showcase_alt": "TEST",
-      "how_content": "TEST"
+      "id": "46",
+      "title": "Baltic Exchange ",
+      "tagline": "Calm Ray expertise and consultancy helps support a 14 trillion-dollar annual maritime shipping market",
+      "title_image": "https://res.cloudinary.com/dtt7scvth/image/upload/v1709829117/baltic_hero_zev9h3.png",
+      "title_alt": "Shipping dock with contains and tankers",
+      "what_content": "Some really clever stuff to make the exchange work",
+      "statistics": "250% better trading ",
+      "showcase_image": "https://res.cloudinary.com/dtt7scvth/image/upload/v1709829114/baltic_showcase_ehibkh.png",
+      "showcase_alt": "Baltic Exchange website on a phone screen",
+      "how_content": "Witchcraft and fairy dust was used to make this magic happen"
     }
   ]
 }
