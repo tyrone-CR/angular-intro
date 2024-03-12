@@ -1,0 +1,142 @@
+{
+  "locations": [
+    {
+      "id": "0",
+      "name": "Acme Fresh Start Housing",
+      "city": "Chicago",
+      "state": "IL",
+      "photo": "https://angular.io/assets/images/tutorials/faa/bernard-hermant-CLKGGwIBTaY-unsplash.jpg",
+      "availableUnits": 4,
+      "wifi": true,
+      "laundry": true
+    },
+    {
+      "id": "1",
+      "name": "A113 Transitional Housing",
+      "city": "Santa Monica",
+      "state": "CA",
+      "photo": "https://angular.io/assets/images/tutorials/faa/brandon-griggs-wR11KBaB86U-unsplash.jpg",
+      "availableUnits": 0,
+      "wifi": false,
+      "laundry": true
+    },
+    {
+      "id": "2",
+      "name": "Warm Beds Housing Support",
+      "city": "Juneau",
+      "state": "AK",
+      "photo": "https://angular.io/assets/images/tutorials/faa/i-do-nothing-but-love-lAyXdl1-Wmc-unsplash.jpg",
+      "availableUnits": 1,
+      "wifi": false,
+      "laundry": false
+    },
+    {
+      "id": "3",
+      "name": "Homesteady Housing",
+      "city": "Chicago",
+      "state": "IL",
+      "photo": "https://angular.io/assets/images/tutorials/faa/ian-macdonald-W8z6aiwfi1E-unsplash.jpg",
+      "availableUnits": 1,
+      "wifi": true,
+      "laundry": false
+    },
+    {
+      "id": "4",
+      "name": "Happy Homes Group",
+      "city": "Gary",
+      "state": "IN",
+      "photo": "https://angular.io/assets/images/tutorials/faa/krzysztof-hepner-978RAXoXnH4-unsplash.jpg",
+      "availableUnits": 1,
+      "wifi": true,
+      "laundry": false
+    },
+    {
+      "id": "5",
+      "name": "Hopeful Apartment Group",
+      "city": "Oakland",
+      "state": "CA",
+      "photo": "https://angular.io/assets/images/tutorials/faa/r-architecture-JvQ0Q5IkeMM-unsplash.jpg",
+      "availableUnits": 2,
+      "wifi": true,
+      "laundry": true
+    },
+    {
+      "id": "6",
+      "name": "Seriously Safe Towns",
+      "city": "Oakland",
+      "state": "CA",
+      "photo": "https://angular.io/assets/images/tutorials/faa/phil-hearing-IYfp2Ixe9nM-unsplash.jpg",
+      "availableUnits": 5,
+      "wifi": true,
+      "laundry": true
+    },
+    {
+      "id": "7",
+      "name": "Hopeful Housing Solutions",
+      "city": "Oakland",
+      "state": "CA",
+      "photo": "https://angular.io/assets/images/tutorials/faa/r-architecture-GGupkreKwxA-unsplash.jpg",
+      "availableUnits": 2,
+      "wifi": true,
+      "laundry": true
+    },
+    {
+      "id": "8",
+      "name": "Seriously Safe Towns",
+      "city": "Oakland",
+      "state": "CA",
+      "photo": "https://angular.io/assets/images/tutorials/faa/saru-robert-9rP3mxf8qWI-unsplash.jpg",
+      "availableUnits": 10,
+      "wifi": false,
+      "laundry": false
+    },
+    {
+      "id": "9",
+      "name": "Capital Safe Towns",
+      "city": "Portland",
+      "state": "OR",
+      "photo": "https://angular.io/assets/images/tutorials/faa/webaliser-_TPTXZd9mOo-unsplash.jpg",
+      "availableUnits": 6,
+      "wifi": true,
+      "laundry": true
+    }
+  ],
+  "projects": [
+    {
+      "id": "2",
+      "title": "RSPCA",
+      "tagline": "Never mawkish, always compassionate - and an office full of pets - we always love working with RSPCA",
+      "title_image": "https://res.cloudinary.com/dtt7scvth/image/upload/v1709829116/rspca_hero_dd0pjs.png",
+      "title_alt": "RSPCA person holding a dog",
+      "what_content": "This is the content for the RSPCA and all the cool stuff we do for them. Animals are the best!",
+      "statistics": "500% better",
+      "showcase_image": "https://res.cloudinary.com/dtt7scvth/image/upload/v1709829115/rspca_showcase_aoaee8.png",
+      "showcase_alt": "RSPCA website on mobile phone",
+      "how_content": "Aww look, dogs are so cute"
+    },
+    {
+      "id": "3",
+      "title": "Glasgow Museums: The Burrell Collection",
+      "tagline": "Curating the future - building a CMS for the new Burrell Collection museum",
+      "title_image": "https://res.cloudinary.com/dtt7scvth/image/upload/v1709829115/burrell_hero_ywnbla.png",
+      "title_alt": "Inside the Glasgow museum",
+      "what_content": "This is the content for the Glasgow museum, look how great the work we did for them is",
+      "statistics": "400% better",
+      "showcase_image": "https://res.cloudinary.com/dtt7scvth/image/upload/v1709829116/burrell_showcase_th1rjl.png",
+      "showcase_alt": "Burrell collection website on mobile phone",
+      "how_content": "Turns out currating is fun and we're good at it"
+    },
+    {
+      "id": 30,
+      "title": "TEST",
+      "tagline": "TEST",
+      "title_image": "TEST",
+      "title_alt": "TEST",
+      "what_content": "TEST",
+      "statistics": "TEST",
+      "showcase_image": "TEST",
+      "showcase_alt": "TEST",
+      "how_content": "TEST"
+    }
+  ]
+}
